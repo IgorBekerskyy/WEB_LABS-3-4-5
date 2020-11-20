@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportOP</title>
+    <link rel = "icon" type = "image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Planes</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="">My planes</a></li>
+                <li><a  id="create_plane_open_button" class="create_plane_open_button">Add plane</a></li>
+            </ul>
+        </nav>
+
+        <div class= "search-plane">
+            <input 
+                type="text" 
+                id="find-plane"
+                name="find-plane"
+                class="find-plane"
+                placeholder="Enter  name"
+            >
+            <button class="clear-search-bar" id ="clear-search-bar">Delete</button>
+        </div>
+    </header>
+
+    <section class="planes-section">
+        
+        <div class="planes-manager">
+            <div class="sort-manager">
+                <label for="sort-select">Sort by</label>
+                <select name="sort-select" id="sort-select" onchange="visualiseSortedPlanes()">
+                    <option value="none">choose</option>
+                    <option value="price">priceInUAH</option>
+                </select>
+            </div>
+            <div class="calculate-price">
+                <button id="calculate-price__button" onclick="calculatePrice()">Count price</button>
+                <label id="total-price" class="total-price">Total price: </label>
+            </div>
+
+        </div>
+        <ul id="planes-list" class="planes-list"></ul>
+    </section>
+
+    <section class="create_plane" id="create_plane">
+        <div id="cross" class="cross">🤑</div>
+        <form class="form__create_plane" , id="form__create_plane">
+            <h1>CREATE PLANE</h1>
+
+            <div>
+                <label>Name</label>
+                <input id="create_name" name="name" type="text" required>
+            </div>
+            <div>
+                <label>Amount</label>
+                <input id="create_amount" name="amount" type="number" step=0.1 required>
+            </div>
+            <div>
+                <label>Price in UAH</label>
+                <input id="create_priceInUAH" name="priceInUAH" type="number" required>
+            </div>
+            <button type="button" id="create_button" onclick="createPlane()">Create</button>
+        </form>
+    </section>
+
+
+    <script src="js/create_edit.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

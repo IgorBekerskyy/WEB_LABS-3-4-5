@@ -1,0 +1,47 @@
+/*@import "normalize.min.css";
+
+@import "reset.css";
+
+@import "globals.css";
+
+@import "header.css";
+
+@import "left_block.css";
+
+@import "right_block.css";
+
+@import "add.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');*/
+/*@import "./global-styles.css";
+
+@import"./header1.css";
+@import "./create-plane.css";
+@import "./my-planes.css";*/
+/*@import "normalize.min.css";
+
+@import "reset.css";
+
+@import "globals.css";
+
+@import "header.css";
+
+@import "left_block.css";
+
+@import "right_block.css";*/
+
+/*@import "add.css";*/
+
+/*@import "popup.css";
+
+@import "popup_add.css";
+
+@import "popup_edit.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');*/
+@import url(reset.css);
+@import url(globals.css);
+@import url(header.css);
+@import url(planes_info.css);
+@import url(createe_plane.css);
+
